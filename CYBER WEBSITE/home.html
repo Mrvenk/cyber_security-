@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CYBER SECURITY THREAT'S</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url(IMAGES/5301586.jpg);
+        background-size: cover;
+       
+    }
+    h1 {
+            font-family:cursive ;
+            font-size:xx-large;
+
+    }
+    .container {
+        text-align: center;
+    }
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 30px 0;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li {
+        display:inline;
+        margin-right: 100px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size:x-large;
+    }
+    nav ul li a:hover {
+        color:chocolate;
+    }
+
+    #info-container {
+        display: none;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color:blanchedalmond;
+        
+    }
+    
+    #info-container1 {
+        display: none;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color:blanchedalmond;
+    }
+
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        position: relative; 
+    }
+   
+    .dropdown {
+        display: none;
+        width: fit-content;
+        position: absolute;
+        top: 22%;
+        left: 55%;
+        background-color:#333;
+        list-style-type: none;
+        padding: 2;
+        margin: 0;
+    }
+    .dropdown li {
+        display: block;
+    }
+   
+    nav ul li:hover .dropdown {
+        display:grid;
+        
+    }
+   .log{
+    position: absolute;
+    right: 0%;
+    left: 240px
+   }
+    
+</style>
+</head>
+<body>
+   
+    <div class="container">
+        <h1>CYBER SECURITY THREAT'S</h1>
+    </div>
+    <nav>
+       <center> <ul>
+        <li><a href="#introduction" onclick="showInfo()">Introduction</a></li>
+
+        <li><a href="#objectives" onclick="showInfo1()">Objectives</a></li>
+
+        <li><a href="#literature" class="nav-link" >Literature Survey</a>
+            <ul class="dropdown">
+                <li><a href="websites.html">Websites</a></li>
+                <li><a href="research.html">Research Paper</a></li>
+                <li><a href="survey.html">survey</a></li>
+
+            </ul>
+        
+        </li>
+        <li><a href="cyber home.html"><img class="log" src="IMAGES/logo/venky.png" alt=""></a></li>
+        </ul></center>
+    </nav>
+   
+    <div id="info-container">
+        <h2>Introduction</h2>
+        <p>Cyber security threats are like invisible dangers lurking in the digital world. They can sneak into our computers, phones, and other devices, causing all sorts of trouble.
+
+            Think of them as sneaky villains trying to steal our secrets, mess with our stuff, or even harm us. They can come in different forms, like viruses, scams, or hackers.
+            
+            But don't worry! Just like we lock our doors to keep out burglars, we can protect ourselves from cyber threats too. By being careful about what we click on, using strong passwords, and keeping our devices updated, we can stay safe in the digital world.
+            
+            So, let's learn how to spot these digital villains and keep our digital lives safe and sound!</p>
+    </div>
+
+    <div id="info-container1">
+        <h2>Objectives</h2>
+        <ul>
+            <li><strong>Data Theft:</strong> Attackers aim to steal sensitive data, such as personal information, financial records, or intellectual property, for their own gain or to sell it on the black market.</li>
+            <li><strong>Financial Gain:</strong> Cybercriminals often target financial institutions, businesses, or individuals to steal money directly through methods like fraudulent transactions, ransomware, or identity theft.</li>
+            <li><strong>Disruption of Services:</strong> Some attacks are designed to disrupt the normal functioning of systems, networks, or services, leading to downtime, loss of productivity, or reputational damage for the targeted organization.</li>
+            <li><strong>Espionage:</strong> Nation-states or corporate competitors may engage in cyber espionage to gather intelligence, trade secrets, or classified information for political, economic, or military advantage.</li>
+            <li><strong>Sabotage:</strong> Attackers may seek to sabotage critical infrastructure, such as power grids, transportation systems, or healthcare facilities, causing widespread disruption, chaos, or harm to society.</li>
+            <li><strong>Extortion:</strong> Ransomware attacks involve encrypting files or locking systems, demanding payment for their release. The objective is to extort money from victims by threatening to withhold access to their data.</li>
+            <li><strong>Identity Theft:</strong> Cybercriminals target individuals' personal information, such as social security numbers, birth dates, or credit card details, to assume their identity for financial fraud or other criminal activities.</li>
+            <li><strong>Propagation:</strong> Some malware, like worms or botnets, aim to propagate themselves across networks or devices, infecting as many systems as possible to expand their control or cause widespread damage.</li>
+            <li><strong>Reputation Damage:</strong> Attacks such as hacking into social media accounts or spreading false information online can tarnish an individual's or organization's reputation, causing trust issues or financial losses.</li>
+            <li><strong>State-Sponsored Attacks:</strong> Governments may engage in cyber warfare or state-sponsored cyber attacks to achieve political, military, or economic objectives, including espionage, sabotage, or disruption of adversaries' systems.</li>
+        </ul>
+    </div>
+</body>
+<script>
+    function showInfo() {
+        var infoContainer = document.getElementById("info-container");
+        if (infoContainer.style.display === "none") {
+            infoContainer.style.display = "block";
+        } else {
+            infoContainer.style.display = "none";
+        }
+    }
+
+    function showInfo1() {
+        var infoContainer = document.getElementById("info-container1");
+        if (infoContainer.style.display === "none") {
+            infoContainer.style.display = "block";
+        } else {
+            infoContainer.style.display = "none";
+        }
+    }
+
+</script>
+</html>

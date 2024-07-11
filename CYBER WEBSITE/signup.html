@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        label, input, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            height: 30px;
+            line-height: 30px;
+            padding: 0 5px;
+        }
+        button {
+            height: 40px;
+            line-height: 40px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+  
+    <form action="" method="POST">
+        <h1>Sign Up</h1>
+  
+
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- Password Confirmation -->
+        <label for="password_confirmation">Confirm Password:</label>
+        <input type="password" id="password_confirmation" name="password_confirmation" required>
+
+        <button type="submit">Sign Up</button>
+
+        <p>Already have an account? <a href="login.html">Log In</a></p>
+           
+       
+    </form>
+
+   
+</body>
+</html>

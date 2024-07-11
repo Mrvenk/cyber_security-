@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cybercrime Complaint Registration</title>
+<link rel="stylesheet" href="styles.css"> <!-- Include your custom CSS file here -->
+</head>
+<body>
+    <style>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/><path fill="none" d="M0 0h24v24H0z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    padding-right: 30px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+<div class="container">
+    <h1>Cybercrime Complaint Registration Form</h1>
+    <form id="complaint-form" action="submit_complaint.php" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="complaint-type">Complaint Type:</label>
+            <select id="complaint-type" name="complaint-type" required>
+                <option value="" disabled selected>Select Complaint Type</option>
+                <option value="Money lost">Money Lost</option>
+                <option value="Identity theft">Identity Theft</option>
+                <option value="data lost">Data lost</option>
+                <option value="Hacking">Hacking</option>
+                <option value="Mobile lost">Mobile Lost</option>
+                <!-- Add more complaint types as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Any Proof's">Any Proof's :</label>
+            <input type="file" id="file-upload" name="file-upload">
+        <button type="submit" style="width: 130px; ;">Upload</button>
+        </div>
+        <div class="form-group">
+            <label for="complaint-details">Complaint Details:</label>
+            <textarea id="complaint-details" name="complaint-details" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit Complaint</button>
+    </form>
+    
+</div>
+
+    <button style="padding: 10px 20px; width: 130px; position: absolute; right: 10%; top: 50%;"><a href="cyber home.html">Go Back</a></button>
+</body>
+</html>

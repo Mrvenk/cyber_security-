@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nearby Cyber Police Stations</title>
+
+</head>
+<body>
+    <style>
+        body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#stations-list {
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+    </style>
+<div class="container">
+    <h1>Select District in Karnataka</h1>
+    <form id="district-form">
+        <div class="dropdown">
+            <select id="district-select" required>
+                <option value="" disabled selected>Select District</option>
+                <option value="Bangalore Urban">Bangalore Urban</option>
+                <option value="Mysore">Mysore</option>
+                <option value="Belagavi">Belagavi</option>
+                <option value="Hubli-Dharwad">Hubli-Dharwad</option>
+                <option value="Mangalore">Mangalore</option>
+                <option value="Gulbarga">Gulbarga</option>
+                <option value="Shivamogga">Shivamogga</option>
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="stations-list" style="display: none;">
+        <h2>Cyber Police Stations</h2>
+        <ul id="police-stations"></ul>
+    </div>
+</div>
+<script>
+    document.getElementById('district-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var selectedDistrict = document.getElementById('district-select').value;
+    var stationsList = document.getElementById('stations-list');
+    var policeStations = [
+        { name: "Cyber crime Police Station 1", address:"Cyber Crime Police StationAddress: 123 Main Street, Cyber City, Bangalore Urban, Karnataka" ,district: "Bangalore Urban" },
+        { name: "Cyber crime Police Station 2",address:" Cyber Crime Investigation CellAddress: 456 Cyber Avenue, Mysore Road, Mysore, Karnataka" , district: "Mysore" },
+        { name: "Cyber crime Police Station 3",address:"Cyber Crime Prevention UnitAddress: 789 Cyber Tower, Dharwad City, Hubli-Dharwad, Karnataka" , district: "Hubli-Dharwad" },
+        { name: "Cyber crime Police Station 4",address:"Cyber Crime Control RoomAddress: 101 Cyber Plaza, Mangalore City, Mangalore, Karnataka" , district:"Mangalore"  },
+        
+        { name: "Cyber crime Police Station 6",address:"Cyber Crime Complaint CenterAddress: 222 Cyber Street, Gulbarga Town, Gulbarga, Karnataka" , district: "Gulbarga" },
+        { name: "Cyber crime Police Station 7",address:"Cyber Crime Monitoring CenterAddress: 333 Cyber Square, Shivamogga District, Shivamogga, Karnataka" , district: "Shivamogga" }
+        // Add more cyber police stations as needed
+    ];
+    var filteredStations = policeStations.filter(function(station) {
+        return station.district === selectedDistrict;
+    });
+    var stationsHTML = '';
+    if (filteredStations.length > 0) {
+        stationsHTML += '<ul>';
+        filteredStations.forEach(function(station) {
+            stationsHTML += '<li>' + station.name + '</li>'+station.address;
+        });
+        stationsHTML += '</ul>';
+    } else {
+        stationsHTML = '<p>No cyber police stations found in ' + selectedDistrict + '</p>';
+    }
+    document.getElementById('stations-list').innerHTML = stationsHTML;
+    stationsList.style.display = 'block';
+});
+
+
+</script>
+<center>
+    <button style="padding: 10px 20px;"><a href="cyber home.html">Go Back</a></button></center>
+</body>
+</html>

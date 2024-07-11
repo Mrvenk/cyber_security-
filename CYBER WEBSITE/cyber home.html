@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Homepage</title>
+ 
+</head>
+<body>
+
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    background-image: url(IMAGES/cyber-security-2296269.jpg);
+    background-size: cover;
+}
+
+.circle-menu {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color:transparent;
+    background-image: url(IMAGES/Screenshot_2024-03-13_141534-removebg-preview.png);
+    background-size: cover;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgb(244, 243, 244);
+}
+
+.menu-item {
+    text-decoration: none;
+    color:black;
+    padding: 20px;
+    display: inline-block;
+    margin: 10px;
+    background-color:darkgrey;
+    
+    border-radius: 35%;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #777;
+    color:white;
+}
+
+.menu-item span {
+    display: block;
+}
+span{
+    font-family: cursive;
+    font-weight:bold;
+}
+.logo {
+
+    position: absolute;
+    right: 60%;
+    top: 0%;
+
+   
+}
+
+    </style>
+    
+    <div class="logo">
+        <a href="home.html"><img src="IMAGES/logo/Screenshot_2024-03-13_144814-removebg-preview.png" alt=""></a>
+    </div>
+    <div class="circle-menu">
+        <a href="type attack.html" class="menu-item">
+            <span>Types of Attacks</span>
+        </a>
+        <a href="near by police.html" class="menu-item">
+            <span>Nearby Cyber Police Station</span>
+        </a>
+        <a href="complaint.html" class="menu-item">
+            <span>Make a Complaint.</span>
+        </a>
+        <a href="soft tools.html" class="menu-item">
+            <span>Software Tools</span>
+        </a>
+    </div>
+</body>
+</html>

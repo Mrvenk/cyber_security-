@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDF Display</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .pdf-container {
+        display: none;
+        width: 0%;
+        height: 500px;
+        margin-top: 20px;
+    }
+    .pdf-visible {
+        display: block;
+    }
+    a {
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: 'Times New Roman', Times, serif;
+        font: bolder;
+    }
+    .bubble {
+     
+       display:block;
+       width: 220px;
+       height: 150px;
+       position: absolute;
+       top: 20%;
+       left: 43%;
+       
+
+    }
+    .bubble a:hover {
+
+        color:palevioletred;
+    }
+</style>
+</head>
+<body>
+    <center><h1>Research Papers</h1></center>
+<div class="bubble">
+    
+
+<a href="PDF/research paper1.pdf" onclick="showPDF('pdf1')">RESEARCH PAPER 1</a><BR></BR>
+<a href="PDF/research paper2.pdf" onclick="showPDF('pdf2')">RESEARCH PAPER 2</a><BR></BR>
+<a href="PDF/research paper3.pdf" onclick="showPDF('pdf3')">RESEARCH PAPER 3</a></BR></BR>
+<a href="PDF/research paper4.pdf" onclick="showPDF('pdf4')">RESEARCH PAPER 4</a><BR></BR>
+<a href="PDF/research paper5.pdf" onclick="showPDF('pdf5')">RESEARCH PAPER 5</a><BR></BR>
+<center>
+    <button style="padding: 10px 20px;"><a href="home.html">Go Back</a></button></center>
+</div>
+
+
+
+</body>
+</html>

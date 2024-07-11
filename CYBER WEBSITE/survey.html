@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Page</title>
+  <style>
+    :root {
+      --primary-color: #ff9100;
+      --secondary-color: #ff9100;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      background-image: url(IMAGES/3d-internet-secuirty-badge.jpg);
+      background-size: cover;
+    }
+    .container {
+      width: 90%;
+      max-width: 800px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .container:hover {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: var(--secondary-color);
+    }
+    #content {
+      
+      text-align: center;
+      margin-top: 30px;
+    }
+    #content img, #content embed {
+      max-width: 50%;
+      height: auto;
+     
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      margin-bottom: 20px;
+    }
+    #content p {
+      font-size: 18px;
+      color: #555;
+      margin-top: 20px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Survey Page</h1>
+    <div class="button-container">
+      <button class="button" onclick="displayImages()">Field Visit</button>
+      <button class="button" onclick="displayData()">Data Collected</button>
+      <button class="button" onclick="displayLetter()">Acknowledge Letter</button>
+    </div>
+    <center>
+        <button style="padding: 10px 20px;"><a href="home.html">Go Back</a></button></center>
+    <div id="content"></div>
+  </div>
+
+  <script>
+    function displayImages() {
+      document.getElementById("content").innerHTML = `
+        <img src='C:/Users/USER/OneDrive/Desktop/CYBER/fill1.jpg' alt='Field Visit Image'>
+        <img src='C:/Users/USER/OneDrive/Desktop/CYBER/fill3.jpg' alt='Field Visit Image'>
+        <img src='C:/Users/USER/OneDrive/Desktop/CYBER/fill4.jpg' alt='Field Visit Image'>
+        
+      `;
+    }
+
+    function displayData() {
+      document.getElementById("content").innerHTML = `<embed src='C:/Users/USER/OneDrive/Desktop/CYBER/CYBER WEBSITE/data collected/JK_HANDBOOK.pdf' type='application/pdf' />
+                                                      <embed src='C:/Users/USER/OneDrive/Desktop/CYBER/CYBER WEBSITE/data collected/cyberprvaha.pdf' type='application/pdf' />
+                                                      <embed src='C:/Users/USER/OneDrive/Desktop/CYBER/CYBER WEBSITE/data collected/CyberSecurityKerala.pdf' type='application/pdf' />
+                                                      <embed src='C:/Users/USER/OneDrive/Desktop/CYBER/CYBER WEBSITE/data collected/Manual_Basic.pdf' type='application/pdf' />
+                                                      
+                                                      `;
+    }
+
+
+    function displayLetter() {
+      document.getElementById("content").innerHTML =" <img src='C:/Users/USER/OneDrive/Desktop/CYBER/CYBER WEBSITE/IMAGES/ack letter.jpg' alt='Field Visit Image'>";
+    }
+  </script>
+</body>
+</html>

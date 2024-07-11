@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        label, input, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="password"] {
+            height: 30px;
+            line-height: 30px;
+            padding: 0 5px;
+        }
+        button {
+            height: 40px;
+            line-height: 40px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+   
+    <form>
+        <h1>Sign In</h1>
+        <label for="username">Login :</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+       <center> <input type="checkbox" id="save-password" name="save-password">Are you sure?</center>
+       
+
+        <button type="submit"><a href="home.html">Login</a></button>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+   
+    </form>
+
+    
+</body>
+</html>
